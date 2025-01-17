@@ -38,6 +38,8 @@ setup(
         'openpyxl',
         'pandas',
         'cryptography',
+        'streamlit',
+        'fastapi',
     ],
     extras_require={
         'test': [
@@ -50,6 +52,7 @@ setup(
         'console_scripts': [
             'mock=kafka_client.producer_kafka_mock:main',
             'kafka-debug-tool=kafka_client.kafka_debug_tool:main',
+            'web-app=web_app.main:main',
         ],
     },
     classifiers=[
