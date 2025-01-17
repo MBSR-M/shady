@@ -109,7 +109,7 @@ def parse_command_line():
     )
     parser.add_argument(
         '--config-file',
-        default='monitor-rtc-event.conf',
+        default='kafka-conf.conf',
         help='Configuration file',
     )
     return parser.parse_args()

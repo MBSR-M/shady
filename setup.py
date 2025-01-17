@@ -42,12 +42,14 @@ setup(
     extras_require={
         'test': [
             'pytest',
+            'kagglehub',
             'pytest-cov',
         ]
     },
     entry_points={
         'console_scripts': [
             'mock=kafka_client.producer_kafka_mock:main',
+            'kafka-debug-tool=kafka_client.kafka_debug_tool:main',
         ],
     },
     classifiers=[
