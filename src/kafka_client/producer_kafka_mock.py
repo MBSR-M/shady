@@ -140,6 +140,7 @@ def main():
     try:
         while True:
             message = generate_random_data()
+            print(message)
             producer.send_message(message)
             logger.info(f"Sent message: {message}")
             time.sleep(5)

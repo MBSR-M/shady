@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
 from setuptools import setup, find_packages
 import datetime
 
@@ -19,13 +18,14 @@ def version():
 
 
 setup(
-    name='wheel-name',
+    name='mbsr-tool',
     version=version(),
     description='Description',
     author='Mubashir',
     author_email='mubashir.ai@outlook.com',
     include_package_data=True,
     package_dir={'': 'src'},
+    packages=find_packages('src'),
     package_data={'': ['*.json', '*.yml', '*.conf']},
     license='Other/Proprietary License',
     install_requires=[
@@ -47,7 +47,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-
+            'mock=kafka_client.producer_kafka_mock:main',
         ],
     },
     classifiers=[
