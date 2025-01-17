@@ -18,7 +18,7 @@ def version():
 
 
 setup(
-    name='mbsr-tool',
+    name='mbsr',
     version=version(),
     description='Description',
     author='Mubashir',
