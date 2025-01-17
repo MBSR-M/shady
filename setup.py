@@ -40,6 +40,8 @@ setup(
         'cryptography',
         'streamlit',
         'fastapi',
+        'python-dotenv',
+        'redis',
     ],
     extras_require={
         'test': [
