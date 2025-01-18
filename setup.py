@@ -41,6 +41,9 @@ setup(
         'streamlit',
         'fastapi',
         'python-dotenv',
+        'passlib',
+        'python-multipart',
+        'python-jose',
         'redis',
     ],
     extras_require={

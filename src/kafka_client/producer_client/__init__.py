@@ -8,7 +8,7 @@ import logging
 from kafka import KafkaProducer
 
 from kafka_client import KafkaConfig
-from utils import retry_with_backoff
+from decorators import retry_with_backoff
 
 logger = logging.getLogger(__name__)
 

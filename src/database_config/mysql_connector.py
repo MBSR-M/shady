@@ -8,7 +8,7 @@ from mysql.connector import pooling
 from threading import Lock
 
 from database_config import MySQLConfig
-from utils import retry_with_backoff, set_session_params, measure_and_log_elapsed_time
+from decorators import retry_with_backoff, set_session_params, measure_and_log_elapsed_time
 
 logger = logging.getLogger(__name__)
 
